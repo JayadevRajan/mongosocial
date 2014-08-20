@@ -1,0 +1,168 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+	font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	background-color: #e9eaed;
+	color: #141823;
+}
+
+.stretch-width
+{
+	width: 100%;	
+}
+
+.search-width
+{
+	width: 400px;	
+}
+
+.profile-view-box
+{
+	width: 500px;	
+}
+
+
+.profile-view-profile-pic-column
+{
+	width: 200px;
+}
+
+.profile-view-details-column
+{
+	width: 300px;
+}
+
+.header
+{
+	height:42px;
+	background-color: #3b5998;
+	border-bottom: 1px solid #133783;
+	
+}
+
+.document-body
+{
+	margin: 0;
+}
+
+.header-container
+{
+	max-width: 976px;
+	margin: auto;
+}
+
+.content-container
+{
+	max-width: 976px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.content-container > table > tbody > tr > td
+{
+	vertical-align: top;
+}
+
+.content
+{
+	
+}
+
+.header-links
+{
+	float: right;	
+}
+
+.header-link
+{
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0 -1px rgba(0, 0, 0, .5);
+}
+
+.like-link
+{
+	color: #3b5998;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.header-logo
+{
+	font: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.body-message
+{
+	font: 30px;
+	font-weight: bold;
+}
+
+.profile-pic
+{
+	width: 160px;
+	max-height: 190px;
+}
+
+.user-pic
+{
+	width: 80px;
+	max-height: 80px;
+}
+
+.news-feed
+{
+	width: 500px;
+}
+
+.news-feed-profile-pic-column
+{
+	width: 100px;
+}
+
+.news-feed-status-column
+{
+	width: 400px;
+}
+
+.button
+{
+	border-radius: 2px 2px 2px 2px;
+	border-color: #29447e #29447e #1a356e;
+	background-color: #5b74a8;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.header-input-text
+{
+	border-radius: 2px 2px 2px 2px;
+}
+
+.status-message
+{
+	font: 22px;
+}
+
+.left-col
+{
+	width: 172px;
+}
+
+.content-col
+{
+	width: 804px;
+}
+
+.search-result
+{
+	background: #fff;
+	border: 1px solid #d3d6db;
+	width: 100%;
+}

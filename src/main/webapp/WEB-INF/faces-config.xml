@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+    version="2.0">
+	<managed-bean>
+		<description>User Session Tracking bean</description>
+		<managed-bean-name>userBean</managed-bean-name>
+		<managed-bean-class>org.mongosocial.bean.UserBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<description>Global Search bean</description>
+		<managed-bean-name>searchBean</managed-bean-name>
+		<managed-bean-class>org.mongosocial.bean.SearchBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>login</display-name>
+		<from-view-id>/login.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>signin</from-outcome>
+			<to-view-id>/home.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>login</display-name>
+		<from-view-id>/login.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>signup</from-outcome>
+			<to-view-id>/profile.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	
+	<navigation-rule>
+		<display-name>search</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>search</from-outcome>
+			<to-view-id>/search.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>home</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>home</from-outcome>
+			<to-view-id>/home.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>friends</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>friends</from-outcome>
+			<to-view-id>/friends.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>profile</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>profile</from-outcome>
+			<to-view-id>/profile.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>signout</display-name>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>signout</from-outcome>
+			<to-view-id>/login.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>loginerror</display-name>
+		<from-view-id>/login.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/login.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+</faces-config>
